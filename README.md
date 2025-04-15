@@ -1,83 +1,88 @@
-# Google AI Project
-### **`Shelly Bot — Your Academic Companion`**
+# Google AI Project  
+### **Shelly Bot  — Your Academic Companion**
 
-🔗 Live Demo:Visit Shelly Bot [here](https://ai.google.dev/competition/projects/shelly-bot)
+**🔗Live Demo:** [Click here to visit Shelly Bot](https://ai.google.dev/competition/projects/shelly-bot)
 
-[](https://github.com/Salma-Talat-Shaheen/google_ai_project/blob/main/shelly.jpg)
-📚 What It Does
-Shelly Bot is an interactive web page designed to be a friendly companion and electronic guide for high school graduates preparing for university life.
+<p align="center">
+  <img src="https://github.com/Salma-Talat-Shaheen/google_ai_project/blob/main/shelly.jpg" alt="Shelly Bot Preview" width="600"/>
+</p>
 
-It helps students by:
+---
 
-Answering academic inquiries in a fun and engaging way
+### ✦ What It Does
 
-Clarifying the differences between majors, titles, and universities
+**Shelly Bot** is an AI-powered web assistant designed to support high school graduates in their transition to university. It offers academic guidance through a friendly and interactive experience.
 
-Assisting students in shaping their academic path
+---
 
-When a student submits a question or expresses a concern, the Gemini API takes over. We've crafted a structured prompt that defines:
+### ✦ Key Functions
 
-How the response should be formatted
+- Provides answers to academic questions in an engaging format  
+- Explains the differences between majors, degrees, and universities  
+- Helps students explore and shape their academic path  
 
-What tone to use
+---
 
-What types of questions are acceptable
+### ✦ How It Works
 
-The responses from the API are tailored to be as helpful and relevant as possible.
+When a student submits a question or expresses a concern, the **Gemini API** is triggered using a structured prompt that defines:
+- Response formatting  
+- Tone and clarity  
+- Allowed scope of topics  
 
-🎥 Unique Response Format
-Instead of showing replies in plain text, Shelly Bot delivers answers in video format, making the experience more dynamic and engaging.
+This approach ensures responses are clear, appropriate, and helpful.
 
-💡 Extra Features
-Shelly also suggests relevant resources based on the student's inquiry—such as:
+---
 
-Recommended courses
+### ✦ Response Format
 
-Scholarships
+Unlike traditional bots, Shelly Bot returns answers in **video format**, making the interaction more immersive and enjoyable.
 
-University programs
+---
 
-📨 Stay Updated
-Students can also subscribe to our newsletter to receive the latest academic opportunities and updates directly.
+### ✦ Additional Features
 
+- Personalized suggestions for courses, scholarships, and university programs  
+- A newsletter subscription option for ongoing academic updates and opportunities  
 
+---
 
-***
-### Setup 
+## ✦ Setup
 
-#### Requirements:
+### Requirements
+- Python  
+- Pip  
 
-- Python
-- Pip
+### Environment Variables
+- `GEMINI_API_KEY`: Your Google Gemini API key (default: `""`)  
+- `CONTENT_PATH`: Directory to store generated content (default: `./tmp/output`)  
 
-### Environment
-- ```GEMINI_API_KEY```: The API key for Google Gemeni. Defaults to "".
-- ```CONTENT_PATH```: The content directory key for storing output. Defaults to `.\tmp\output`
+---
 
-### To run locally
+## ✦ Run the App
 
-
-  
-```
+### Locally
+```bash
 pip install -r requirements.txt
 python app/main.py
 ```
 
-### To run locally with docker
-
-```
+### With Docker
+```bash
 docker compose up --build
 ```
-### To deploy to AWS
 
-#### 1. Install AWS
+### Deploy to AWS
 
-#### 2. Set AWS profile
+1. Install AWS CLI  
+2. Set AWS credentials:
+```bash
+aws configure
 ```
-
-```
-#### 2. Run serverless deploy
-```
+3. Deploy with Serverless:
+```bash
 npm install
 serverless deploy --stage dev
 ```
+
+---
